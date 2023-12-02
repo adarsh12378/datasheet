@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Admin Dashboard</title> 
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    
+  </head>
+  <body>
+
+<h1 style="text-align:center; font-size:50px; padding:15px;">Admin Dashboard</h1>
+    <div class="dashboard">
+    <div class="search-container">
+        <input type="text" placeholder="Enter value" class="search-input" >
+       <button class="delete-selected"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox" class="select-all"></th>
+            <th>Name</th>
+            <th>Email</th> 
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows added dynamically via JS -->
+        </tbody>
+      </table>
+<br><br>
+</div>
+
+      <div class="pagination">
+        <span class="count-label"><!-- count added dynamically via JS --></span>
+        
+        <div class="pagination-controls"> 
+          <div class="page-numbers">
+            <!-- Page numbers added dynamically via JS -->
+          </div>
+        </div>
+      </div>
+      
+    <script src="script.js"></script>
+
+  </body>
+</html>
